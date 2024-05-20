@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dog Adoption Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    form {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    input[type="text"], select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    <br></br>
+    input[type="submit"] {
+        background-color: blue;
+        color:white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+    input[type="submit"]:hover {
+        background-color:grey;
+    }
+</style>
+</head>
+<body>
+<form action="connect.php" method="post">
+    <h2>Dog Adoption Form</h2>
+    <label for="Full Name">Name:</label>
+    <input type="text" id="Full Name" name="Full Name"/>
+    <label for="Email">Email:</label>
+    <input type="text" id="Email" name="Email" />
+    <label for="Phone">Phone:</label>
+    <input type="text" id="Phone" name="Phone"/>
+    <label for="dog_breed">Preferred Dog Breed:</label>
+    <select id="dog_breed" name="dog_breed">
+        <option value="Chippiparia">Chippiparia</option>
+        <option value="Indian Pariah">Indian Pariha</option>
+        <option value="PandiKona">PandiKona</option>
+        <option value="Combai">Comabi</option>
+        <option value="Indian Spitz">Indian Spitz</option>
+    </select>
+    <label for="message">Additional Message:</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+    <input type="Submit" value="Submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        aside {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+  margin-top: 0;
+}
+
+.sort-option {
+  cursor: pointer;
+}
+
+.sort-option:hover {
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: blue;
+  color: white;
+  padding: 1rem;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+main.dog-list {
+  flex: 1 1 70%;
+}
+
+.dog-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.dog-card img {
+  border-radius: 4px;
+  width: 100%;
+}
+
+.dog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: 640px) {
+  .dog-card {
+    width: calc(33.333% - 2rem);
+  }
+}
+
+footer {
+  background-color:blue;
+  color: white;
+  padding: 1rem;
+  text-align:center;
+}
+</style>
+<body>
+    <header>
+        
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Adoption Site</title>
+    <style>
+        /* Add your CSS styling here */
+        .sort-options {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .sort-options li {
+            display: inline-block;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .sort-options li:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Dog Adoption Site</h1>
+
+<p>Sort By:</p>
+<ul class="sort-options">
+    <li onclick="sortByPriceLowToHigh()">Price Low to High</li>
+    <li onclick="sortByPriceHighToLow()">Price High to Low</li>
+    <li onclick="sortByAgeLowToHigh()">Age Low to High</li>
+    <li onclick="sortByAgeHighToLow()">Age High to Low</li>
+</ul>
+
+<script>
+    // Add your JavaScript functions here for sorting
+    function sortByPriceLowToHigh() {
+        dogs.sort((a, b) => a.price - b.price);
+    console.log('Sorted by Price Low to High:', dogs);
+    }
+
+    function sortByPriceHighToLow() {
+        // Your sorting logic for price high to low
+    }
+
+    function sortByAgeLowToHigh() {
+        // Your sorting logic for age low to high
+    }
+
+    function sortByAgeHighToLow() {
+        // Your sorting logic for age high to low
+    }
+
+    function sortByNew() {
+        // Your sorting logic for newest arrivals
+    }
+</script>
+      <h1>Dog Listings</h1>
+    </header>
+    <div class="container">
+      <aside class="sidebar">
+      </aside>
+      <main class="dog-list">
+        <div class="dog-card">
+          <img src="dog1.jpg" alt="Dog 1">
+          <h2>Name:Archi</h2>
+           <p>Age:10 weeks</p>
+            <p>Indian Piraha Dog</p>
+            <p>Price: ₹8,000</p>
+            <p>Vaccinated,  affectionate, and great with kids </p>
+          
+        </div>
+        <div class="dog-card">
+            <img src="dog2.jpg" alt="Dog 2">
+            <h2>Name:Poppy</h2>
+          <p>Age:7 weeks</p>
+            <p>Indian Piraha Dog</p>
+            <p>Price: ₹10,000</p>
+            <p>Vaccinated,Affectionate, playful, and loyal </p>
+            
+          </div>
+          <div class="dog-card">
+            <img src="dog3.jpg" alt="Dog 3">
+            <h2>Name:Charlie</h2>
+                <p>Age:4 week</p>
+                  <p>Indian Piraha Dog</p>
+                  <p>Price: ₹12,000</p> ctfvtg67uwsaw3rtui0p
+                  
+                  
+                  <p>Vaccinated, Gentle, intelligent, and spunky </p>
+            
+          </div>
+          <div class="dog-card">
+            <img src="dog4.jpg" alt="Dog 4">
+            <h2>Name:Simba</h2>
+          <p>Age:6 week</p>
+            <p>Indian Piraha Dog</p>
+            <p>Price: ₹15,000</p>
+            <p>Vaccinated,Playful,social, and full of personality </p>
+            
+          </div>
+          <div class="dog-card">
+            <img src="dog5.jpg" alt="Dog 5">
+            <h2>Name:Oreo</h2>
+          <p>Age:10 weeks</p>
+            <p>Indian Piraha Dog</p>
+            <p>Price: ₹12,000</p>
+            <p>Vaccinated, Playful, Friendly </p>
+            
+          </div>
+          <div class="dog-card">
+            <img src="dog6.jpg" alt="Dog 6">
+            <h2>Name:Luna</h2>
+            <p>Age:6 weeks</p>
+            <p>Indian Piraha Dog</p>
+            <p>Price: ₹10,000</p>
+            <p>Vaccinated, Intelligent, affectionate, and alert </p>
+            
+          </div>
+        <!-- Repeat for other dogs -->
+      </main>
+    </div>
+    <footer>
+      <p>&copy; 2024 Dog Listings</p>
+    </footer>
+  </body>
+  </html>
